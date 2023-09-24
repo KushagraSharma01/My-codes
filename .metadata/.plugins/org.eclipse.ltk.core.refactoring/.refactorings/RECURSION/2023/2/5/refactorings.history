@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;recursion.Q_34_rat_in_a_maze&apos; to &apos;Q_34_rat_chases_a_cheeze&apos;&#x0D;&#x0A;- Original project: &apos;RECURSION&apos;&#x0D;&#x0A;- Original element: &apos;recursion.Q_34_rat_in_a_maze&apos;&#x0D;&#x0A;- Renamed element: &apos;recursion.Q_34_rat_chases_a_cheeze&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Q_34_rat_in_a_maze&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;recursion{Q_34_rat_in_a_maze.java[Q_34_rat_in_a_maze" matchStrategy="1" name="Q_34_rat_chases_a_cheeze" qualified="false" references="true" similarDeclarations="false" stamp="1675248073830" textual="false" version="1.0"/>
+</session>

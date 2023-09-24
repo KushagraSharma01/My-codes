@@ -1,0 +1,15 @@
+package Linked_List;
+
+public class Linked_List_Client {
+
+	public static void main(String[] args) {
+		Linked_list ll=new Linked_list();
+		ll.AddFirst(1);
+		ll.AddFirst(2);
+		ll.AddFirst(3);
+		ll.AddFirst(4);
+		ll.AddFirst(5);
+		ll.Display();
+	}
+
+}

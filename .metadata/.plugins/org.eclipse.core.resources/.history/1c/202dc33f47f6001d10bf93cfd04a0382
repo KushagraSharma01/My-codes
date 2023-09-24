@@ -1,0 +1,9 @@
+package Question_Linked_List;
+
+public class Que {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

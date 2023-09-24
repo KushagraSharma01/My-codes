@@ -1,0 +1,38 @@
+package Linked_List;
+
+import java.util.Arrays;
+
+public class leet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] nums= {{7,2,1},{6,4,2},{6,5,3},{3,2,1}};
+		for(int i=0;i<nums.length;i++) {
+			Arrays.sort(nums[i]);
+		}
+		
+		for(int i=0;i<nums.length;i++) {
+			int k=0;
+			int k1=nums[0].length-1;
+			while(k<k1) {
+				int temp=nums[i][k];
+				nums[i][k]=nums[i][k1];
+				nums[i][k1]=temp;
+				k++;
+				k1--;
+			}
+		}
+		int sum=0;
+		for(int i=0;i<nums[0].length;i++) {
+			int max=0;
+			for(int j=0;j<nums.length;j++) {
+				if(nums[j][i]>max) {
+					max=nums[j][i];
+				}
+			}
+			sum=sum+max;
+		}
+		System.out.println(sum);
+	}
+
+}

@@ -1,0 +1,36 @@
+package pc;
+import java.util.*;
+public class p2{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            int score=0;
+                for(int j=1;j<=10;j++){
+                    String s=sc.next();
+                    for(int i=1;i<=10;i++) {
+                    if(s.charAt(i-1)=='X'){
+                        if(i>=5&&i<=6&&j>=5&&j<=6){
+                            score+=5;
+                        }
+                        else if(i>=4&&i<=7&&j>=4&&j<=7){
+                            score+=4;
+                        }
+                        else if(i>=3&&i<=8&&j>=3&&j<=8){
+                            score+=3;
+                        }
+                        else if(i>=2&&i<=9&&j>=2&&j<=9){
+                            score+=2;
+                        }
+                        else if(i>=1&&i<=10&&j>=1&&j<=10){
+                            score+=1;
+                        }
+                    }
+                    }
+                }
+            }
+            System.out.println(score);
+            
+        }
+            
+}

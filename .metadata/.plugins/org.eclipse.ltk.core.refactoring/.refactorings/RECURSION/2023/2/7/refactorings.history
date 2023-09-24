@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;recursion.Q_42_N_Queens&apos; to &apos;Q_42_N_Queens_by_monu&apos;&#x0D;&#x0A;- Original project: &apos;RECURSION&apos;&#x0D;&#x0A;- Original element: &apos;recursion.Q_42_N_Queens&apos;&#x0D;&#x0A;- Renamed element: &apos;recursion.Q_42_N_Queens_by_monu&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Q_42_N_Queens&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;recursion{Q_42_N_Queens.java[Q_42_N_Queens" matchStrategy="1" name="Q_42_N_Queens_by_monu" qualified="false" references="true" similarDeclarations="false" stamp="1676439849864" textual="false" version="1.0"/>
+</session>

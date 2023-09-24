@@ -1,0 +1,15 @@
+package Map;
+import java.util.*;
+public class Set {
+	public static void main(String [] agrs) {
+		HashSet<Integer> hs=new HashSet<>(); //implemented using HashTable
+		hs.add(4);
+		hs.add(5);
+		hs.add(6);
+		hs.add(7);
+		hs.add(4);
+		System.out.println(hs);
+		System.out.println(hs.contains(4));
+		System.out.println(hs.contains(-4));
+	}
+}

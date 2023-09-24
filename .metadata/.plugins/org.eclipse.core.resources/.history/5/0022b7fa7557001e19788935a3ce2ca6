@@ -1,0 +1,19 @@
+package Map;
+import java.util.*;
+//HashMap TreeMap Linked hashMap
+
+public class Map {
+	
+	public static void main(String []args) {
+		HashMap<String,Integer> map=new HashMap<>();
+		map.put("raj",86);
+		map.put("manish", 70);
+		map.put("Amisha", 67);
+		map.put("Puneet", 80);
+		map.put("Ankit", 67);
+		map.put("Puneet", 78);
+		System.out.println(map);
+		//key is unique
+		
+	}
+}

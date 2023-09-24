@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Binary_tree.bintree1.java&apos; to &apos;BinaryTree.java&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;Binary_tree.bintree1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Binary_tree.BinaryTree.java&apos;" description="Rename compilation unit &apos;bintree1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Binary_tree{bintree1.java" name="BinaryTree.java" references="false" stamp="1691560041291" version="1.0"/>
+</session>

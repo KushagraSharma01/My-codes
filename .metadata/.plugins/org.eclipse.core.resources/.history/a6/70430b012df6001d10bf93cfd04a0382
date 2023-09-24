@@ -1,0 +1,30 @@
+package  Linked_List;
+import java.util.ArrayList;
+
+import Linked_List.Linked_list.Node;
+
+import java.util.*;
+public class Soft_skill {
+    
+	public class Node{
+		int val;			//value
+		Node next;			//address
+	}
+    public static void main(String[] args) {
+//       int n=-2;
+////       String str=Integer.toString(n);
+////       System.out.println(str);
+//       String str="-3";
+//       int n1=Integer.valueOf(str);
+//       System.out.println(n1+1);3
+    	
+    	
+    	
+    	LinkedList<Integer> ll=new LinkedList<>();
+    	ll.add(5);
+        System.out.println(ll);
+    	Stack<Integer> ll1=new Stack<>();
+    	ArrayList<ArrayList<Integer>> lo=new ArrayList<>();
+    	
+    }
+}

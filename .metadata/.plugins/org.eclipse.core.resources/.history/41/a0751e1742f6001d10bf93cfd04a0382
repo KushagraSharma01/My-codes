@@ -1,0 +1,145 @@
+package Linked_List;
+
+import Linked_List.Linked_list.Node;
+
+public class Linked_list {
+
+	public class Node{
+		int val;			//value
+		Node next;			//address
+	}
+	private Node head;			//head is a data member of linked list class
+	private int size;
+	private Node tail;
+	public void AddFirst(int item) {
+		Node nn=new Node();
+		nn.val=item;
+		if(size==0) {
+			this.head=nn;
+			this.tail=nn;
+		}
+		else {
+			nn.next=this.head;
+			this.head=nn;
+		}
+		this.size++;
+	}
+	public void Display() {
+		Node temp=head;
+		while(temp!=null) {
+			System.out.print(temp.val+"->");
+			temp=temp.next;
+		}
+		System.out.println(".");
+	}
+	public void AddLast(int item) {
+		if(this.size==0) {
+			AddFirst(item);
+		}
+		else {
+			Node nn=new Node();
+			nn.val=item;
+			tail.next=nn;
+			tail=nn;
+			this.size++;
+		}
+	}
+	public Node GetNode(int k) throws Exception {
+		if(k<0 || k>=size) {
+			throw new Exception("baklol k range mail daal");
+		}
+		Node temp=head;
+		for(int i=0;i<k;i++) {
+			temp=temp.next;
+		}
+		return temp;
+	}
+	public void AddAtIndex(int item,int k) throws Exception {
+		if(k<0 || k>=size) {
+			throw new Exception("baklol k range mail daal");
+		}
+		if(k==0) {
+			AddFirst(item);
+		}
+		else if(k==size-1) {
+		AddLast(item);
+		}
+		else {
+			Node nn=new Node();
+			nn.val=item;
+			Node K_1=GetNode(k-1);
+			nn.next=K_1.next;
+			K_1.next=nn;
+			this.size++;
+		}
+	}
+	public int GetFirst() {
+		return head.val;
+	}
+	public int GetLast() {
+		return tail.val;
+	}
+	public int GetAtIndex(int k) throws Exception {
+		if(k<0 || k>=size) {
+			throw new Exception("baklol k range mail daal");
+		}
+		if(k==0) {
+			return GetFirst();
+		}
+		else if(k==size-1) {
+			return GetLast();
+		}
+		else {
+			Node temp=GetNode(k);
+			return temp.val;
+		}
+	}
+	public int RemoveFirst() throws Exception {
+		if(size==0) {
+			throw new Exception("baklol linked list empty hai");
+		}
+		int rv=head.val;
+		if(size==1) {
+			head=null;
+			tail=null;
+			size=0;
+		}
+		else {
+			Node temp=head;
+			head=head.next;
+			temp.next=null;
+			this.size--;
+		}
+		return rv;
+	}
+	public int RemoveLast() throws Exception {
+		if(size==0) {
+			throw new Exception("baklol linked list empty hai");
+		}
+		int rv=tail.val;
+		if(size==1) {
+			head=null;
+			tail=null;
+			size=0;
+		}
+		else {
+			Node temp=GetNode(size-2);
+			temp.next=null;
+			tail=temp;
+			this.size--;
+		}
+		return rv;
+	}
+	public int RemoveAtIndex(int k) throws Exception{
+		if(size==0) {
+			throw new Exception("baklol linked list empty hai");
+		}
+		if(k<0 || k>=size) {
+			throw new Exception("baklol k range mail daal");
+		}
+		Node temp=GetNode(k);
+		int rv=temp.val;
+	}
+	
+}
+

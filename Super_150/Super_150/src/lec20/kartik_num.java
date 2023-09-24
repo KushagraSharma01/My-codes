@@ -1,0 +1,38 @@
+package lec20;
+
+public class kartik_num {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="abba";
+		int k=2;
+		int aflip=perfectness_maximum_length(str,k,'a');
+		int bflip=perfectness_maximum_length(str,k,'b');
+		System.out.println(Math.max(aflip, bflip));
+	}
+	public static int perfectness_maximum_length(String str,int k,char ch) {
+		int si=0;
+		int ei=0;
+		int flip=0;
+		int ans=0;
+		while(ei<str.length()) {
+			// window grow 
+			if(str.charAt(ei)==ch) {
+				flip++;
+			}
+			//window shrink
+			while(flip>k) {
+				if(str.charAt(si)==ch) {
+					flip--;
+				}
+				
+				si++;
+			}
+			// calculate window size
+			ans=Math.max(ans, ei-si+1);
+			ei++;
+		}
+		return ans;
+	}
+
+}

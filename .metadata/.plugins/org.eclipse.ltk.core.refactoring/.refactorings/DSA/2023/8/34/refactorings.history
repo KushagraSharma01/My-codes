@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Binary_tree.construce_bst_levelorder&apos; to &apos;construct_bst_levelorder&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;Binary_tree.construce_bst_levelorder&apos;&#x0D;&#x0A;- Renamed element: &apos;Binary_tree.construct_bst_levelorder&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;construce_bst_levelorder&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Binary_tree{construce_bst_levelorder.java[construce_bst_levelorder" matchStrategy="1" name="construct_bst_levelorder" qualified="false" references="true" similarDeclarations="false" stamp="1692859239487" textual="false" version="1.0"/>
+</session>

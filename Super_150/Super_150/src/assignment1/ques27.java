@@ -1,0 +1,23 @@
+package assignment1;
+import java.util.*;
+public class ques27 {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]= new int[n];
+		int i=0;
+		while(i<=n-1) {
+			a[i]=sc.nextInt();
+			i++;
+		}
+		int max=a[0];
+		i=0;
+		while(i<=n-1) {
+			if(max<a[i]) {
+				max=a[i];
+			}
+			i++;
+		}
+		System.out.println(max);
+    }
+}

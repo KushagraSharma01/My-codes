@@ -1,0 +1,23 @@
+package Linked_List;
+
+public class Linked_List_Client {
+
+	public static void main(String[] args) throws Exception {
+		Linked_list ll=new Linked_list();
+		ll.AddFirst(1);
+		ll.AddFirst(2);
+		ll.AddFirst(3);
+		ll.AddFirst(4);
+		ll.AddFirst(5);
+		ll.Display();
+		ll.AddLast(-1);
+		ll.Display();
+		System.out.println(ll.GetNode(2));	//It gives address of node which is at index 2
+		ll.AddAtIndex(-2, 2);
+		ll.Display();
+		System.out.println(ll.GetFirst());
+		System.out.println(ll.GetLast());
+		System.out.println(ll.GetAtIndex(0));
+	}
+
+}

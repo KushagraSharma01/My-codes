@@ -1,0 +1,18 @@
+package Questions_Linked_list;
+import java.util.*;
+public class Murthal_Paratha {
+
+	public static void main(String[] args) {
+		int nop=10;			//No. of parathas
+		int l=4;			//NO. of cooks
+		int[] rank= {1,2,3,4};
+		Arrays.sort(rank);
+		System.out.println(Minimum(rank,nop));
+	}
+
+	public static int Minimum(int[] rank, int nop) {
+		int lo=nop*rank[0];
+		int hi=nop*rank[rank.length-1];
+	}
+
+}
