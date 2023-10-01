@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author kusha
- *
- */
-module LinkedList {
-}
