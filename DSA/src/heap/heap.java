@@ -27,7 +27,7 @@ public class heap {
 			list.set(pi, list.get(ci));	//replacing value at index
 			list.set(ci, temp);
 		}
-		public int remove() {			//to do this in log(n) we need to swap first and last value and remove last one, then apply downheapify for last index
+		public int remove() {			//to do this in log(n) we need to swap first and last value and remove last one, then apply downheapify for new first index
 			int rv=list.get(0);
 			Swap(0,list.size()-1);
 			list.remove(list.size()-1);
