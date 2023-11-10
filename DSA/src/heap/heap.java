@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 import java.util.*;
 public class heap {
 	//heap is a complete binary tree

@@ -1,4 +1,4 @@
-package heap;
+package Heap;
 import java.util.Collections;
 import java.nio.file.spi.FileSystemProvider;
 import java.util.PriorityQueue;
