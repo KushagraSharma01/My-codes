@@ -11,6 +11,7 @@ public class Distinct_subsequence {
 			for(int j=0;j<dp[0].length;j++)
 				dp[i][j]=-1;
 		}
+		System.out.println(Ds_with_dp(s,t,0,0,dp));
 		
 	}
 	//from coin change

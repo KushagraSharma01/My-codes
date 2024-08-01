@@ -7,9 +7,7 @@ public class construct_1 {
 		int data;
 		Node left;
 		Node right;
-		Node(){
-			//constructor
-		}
+		
 	}
 	Node root=new Node();
 	public void createtree() {

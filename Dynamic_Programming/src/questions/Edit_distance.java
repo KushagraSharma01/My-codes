@@ -24,9 +24,10 @@ public class Edit_distance {
 			ans=edist(s1,s2,i+1,j+1,dp);
 		}
 		else {
-			int fs=edist(s1,s2,i+1,j,dp);		//three operations
-			int ss=edist(s1,s2,i+1,j+1,dp);
-			int ts=edist(s1,s2,i,j+1,dp);
+			//three operations
+			int fs=edist(s1,s2,i+1,j,dp);		//delete
+			int ss=edist(s1,s2,i+1,j+1,dp);		//replace
+			int ts=edist(s1,s2,i,j+1,dp);		//add
 			ans=Math.min(fs, Math.min(ss, ts))+1;
 		}
 		dp[i][j]=ans;

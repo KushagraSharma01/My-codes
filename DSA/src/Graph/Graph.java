@@ -1,7 +1,7 @@
 package Graph;
 
 import java.util.*;
-
+		//undirected graph
 public class Graph {
 	HashMap<Integer, HashMap<Integer, Integer>> map;
 
@@ -29,8 +29,8 @@ public class Graph {
 
 	public int noofEdge() {
 		int ans = 0;
-		for (int nbrs : map.keySet()) {
-			ans += map.get(nbrs).size();
+		for (int vtx : map.keySet()) {
+			ans += map.get(vtx).size();
 		}
 		return ans / 2;
 	}
@@ -58,10 +58,10 @@ public class Graph {
 		if (src == des) {
 			return true;
 		}
-		visited.add(src);
+		visited.add(src);						
 		for (int nbrs : map.get(src).keySet()) {
 			if (!visited.contains(nbrs)) {
-				boolean ans = haspath(nbrs, des, visited);
+				boolean ans = haspath(nbrs, des, visited);		
 				if (ans) {
 					return ans;
 				}

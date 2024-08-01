@@ -12,19 +12,19 @@ public class construct_2 {
 		}
 	}
 	private Node root=new Node();
-	public void createtree() {
-		this.root=createtree(this.root);
+	public void createTree() {
+		this.root=createtree();
 	}
-	private Node createtree(Node root) {
+	private Node createtree() {
 		int a=sc.nextInt();
 		Node rootn=new Node();
 		rootn.data=a;
 		boolean hlc=sc.nextBoolean();
 		if(hlc) 
-			rootn.left=createtree(rootn);
+			rootn.left=createtree();
 		boolean hrc=sc.nextBoolean();
 		if(hrc)
-			rootn.right=createtree(rootn);
+			rootn.right=createtree();
 		return rootn;
 	}
 	public void print() {
@@ -39,7 +39,7 @@ public class construct_2 {
 	}
 	public static void main(String[] args) {
 		construct_2 bt=new construct_2();
-		bt.createtree();
+		bt.createTree();
 		bt.print();
 	}
 }

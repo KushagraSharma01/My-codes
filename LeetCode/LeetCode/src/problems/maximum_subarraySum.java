@@ -9,7 +9,7 @@ public class maximum_subarraySum {
 		System.out.println(Maximum_subarraysum(a));
 	}
 	
-	public static int Maximum_subarraysum(int[]a) {				//Kadano's Algorithm
+	public static int Maximum_subarraysum(int[]a) {				//Kadane's Algorithm
 		int ans=a[0];
 			int sum=0;
 			for(int j=0;j<a.length;j++) {
